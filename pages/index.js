@@ -45,25 +45,14 @@ const Main = () => (
     <Footer />
 
 
-    <style global jsx>{`
-      *, *:before, *:after { box-sizing: border-box; -webkit-appearance:none;}
-      body,h1,h2,h3,h4,ul,li,div,p,a {p adding: 0; margin: 0; text-decoration: none; list-style-type:none; } 
-      body, input { font-size: 1rem; font-family: monospace; color: #9a9999; height: 100%; }
-      a { color: rgb(230, 155, 131); }
-      h1{font-size:3.6rem;}
-      h1{font-size:2.4rem;}
-      h3{font-size:1.6rem;}
-      p {  }
-      .shadow{ padding: 8px; border: none; border-radius: 24px; box-shadow: 7px 10px 20px 1px rgba(204, 189, 177, 0.48); } 
-    `}</style>
-  </div>
+
 )
-const HeadSpace = styled.header`
-  position:fixed;
-  left:0;
-  width:33.33333%;
-  height; 100%;
-`
+// const HeadSpace = styled.header`
+//   position:fixed;
+//   left:0;
+//   width:33.33333%;
+//   height; 100%;
+// `
 const Logo = styled.h1`
   height: 100px;
   line-height:100px;
@@ -84,7 +73,7 @@ const MainSpace = styled.div`
 `
 const CommandList = styled.ul`
   width:100%;
-  margin-top:100px;
+  margin:100px 33.33333% 0 0 ;
   overflow:scroll;
 `
 const Item = styled.li`
@@ -113,5 +102,3 @@ export default Main;
 //   const page = content.pages.find(page => page.path === currentPath) || {notfound: true};
 //   return {props: {page}};
 // }
-
-/* thank you for checking it out! */
